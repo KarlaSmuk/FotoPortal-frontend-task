@@ -1,5 +1,5 @@
 import { PhotoDetailsPageData } from "../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
-import PhotoPreviewContainer from "../PhotoPreviewContainer/PhotoPreviewContainer.component";
+import PhotoPreviewContainer from "./components/PhotoPreviewContainer/PhotoPreviewContainer.component";
 import PhotoDetailsFooter from "./components/PhotoDetailsFooter/PhotoDetailsFooter.component";
 
 type PhotoDetailsProps = {

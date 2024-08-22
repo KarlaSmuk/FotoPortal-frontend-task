@@ -8,7 +8,7 @@ export default function PhotoPreviewContainer({
   return (
     <img
       src={url}
-      className="absolute mt-[42px] ml-[254px] w-[448px] h-[527px]"
+      className="absolute mt-[42px] ml-[254px] w-[448px] h-[527px] object-cover"
     />
   );
 }
