@@ -1,14 +1,11 @@
 import { ReactNode } from "react";
 
-type PhotoTextProps = {
+type InfoContainerProps = {
   title: string;
   children: ReactNode;
 };
 
-export default function PhotoTextContainer({
-  title,
-  children,
-}: PhotoTextProps) {
+export default function InfoContainer({ title, children }: InfoContainerProps) {
   return (
     <div className="tracking-[-0.4px] text-black">
       <h2 className="font-bold text-xs leading-[16.34px] mb-[5px] uppercase">
