@@ -11,7 +11,7 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
   return (
     <div className="bg-white mt-[634px] h-[411px] w-full">
       <div className="ml-[65px]">
-        <div className="flex justify-between mt-[41px] w-[669px] h-[65px]">
+        <div className="flex justify-between mt-[41px] max-w-[669px] h-[65px]">
           <InfoContainer title={"Galerija"}>
             <InfoContainerContent
               lineHeight="19.07px"
@@ -31,7 +31,7 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
             />
           </InfoContainer>
         </div>
-        <div className="w-[827px] mt-[21px]">
+        <div className="max-w-[827px] mt-[21px]">
           <InfoContainer title={"Opis"}>
             <InfoContainerContent
               lineHeight="22px"
@@ -39,7 +39,7 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
             />
           </InfoContainer>
         </div>
-        <div className="w-[574px] mt-[23px]">
+        <div className="max-w-[574px] mt-[23px]">
           <InfoContainer title={"Ključne riječi"}>
             <div className="flex flex-wrap gap-[10px] mt-[15px]">
               {photo.keywords.map((keyword) => {
