@@ -9,8 +9,8 @@ type PhotoDetailsFooterProps = {
 
 export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
   return (
-    <div className="bg-white mt-[634px] h-[411px] w-full">
-      <div className="ml-[65px]">
+    <div className="h-full w-full">
+      <div className="mx-[65px] mb-[68px]">
         <div className="flex justify-between mt-[41px] max-w-[669px] h-[65px]">
           <InfoContainer title={"Galerija"}>
             <InfoContainerContent

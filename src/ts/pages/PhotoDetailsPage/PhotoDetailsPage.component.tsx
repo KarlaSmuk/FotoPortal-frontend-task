@@ -4,9 +4,5 @@ import { PhotoDetailsPageData } from "./types/PhotoDetailsData.type";
 
 export default function PhotoDetailsPage() {
   const photo: PhotoDetailsPageData = useGetPhotoDetails();
-  return (
-    <div className="bg-bg-color">
-      <PhotoDetails photo={photo} />
-    </div>
-  );
+  return <PhotoDetails photo={photo} />;
 }
