@@ -6,7 +6,7 @@ type KeywordContainerProps = {
 
 export default function KeywordContainer({ keyword }: KeywordContainerProps) {
   return (
-    <div className="border border-solid border-border-grey rounded-[50px] px-[15px] h-7">
+    <div className="flex border border-solid border-border-grey rounded-[50px] h-7 pt-1 pb-[5px] px-3">
       <InfoContainerContent lineHeight="19px" paragraph={keyword} />
     </div>
   );
