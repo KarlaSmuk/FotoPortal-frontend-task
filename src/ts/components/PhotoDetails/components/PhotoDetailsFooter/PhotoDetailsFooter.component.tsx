@@ -12,16 +12,13 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
     <div className="mx-[65px] mb-[68px]">
       <div className="flex justify-between mt-[41px] max-w-[669px] h-[65px]">
         <InfoContainer title={"Galerija"}>
-          <InfoContainerContent
-            lineHeight="19.07px"
-            paragraph={photo.gallery}
-          />
+          <InfoContainerContent lineHeight="19px" paragraph={photo.gallery} />
         </InfoContainer>
         <InfoContainer title={"Autor"}>
-          <InfoContainerContent lineHeight="19.07px" paragraph={photo.author} />
+          <InfoContainerContent lineHeight="19px" paragraph={photo.author} />
         </InfoContainer>
         <InfoContainer title={"Agencija"}>
-          <InfoContainerContent lineHeight="19.07px" paragraph={photo.agency} />
+          <InfoContainerContent lineHeight="19px" paragraph={photo.agency} />
         </InfoContainer>
       </div>
       <div className="max-w-[827px] mt-[21px]">
