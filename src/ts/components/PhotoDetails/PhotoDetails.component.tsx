@@ -8,7 +8,7 @@ type PhotoDetailsProps = {
 
 export default function PhotoDetails({ photo }: PhotoDetailsProps) {
   return (
-    <div className="flex flex-col">
+    <div className="flex-col">
       <PhotoPreviewContainer url={photo.url} />
       <PhotoDetailsFooter photo={photo} />
     </div>
