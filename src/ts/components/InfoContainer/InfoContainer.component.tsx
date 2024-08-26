@@ -8,9 +8,7 @@ type InfoContainerProps = {
 export default function InfoContainer({ title, children }: InfoContainerProps) {
   return (
     <div className="tracking-[-0.4px] text-black">
-      <h2 className="font-bold text-xs leading-[16px] mb-[5px] uppercase">
-        {title}
-      </h2>
+      <div className="font-bold text-xs mb-[5px] uppercase">{title}</div>
       {children}
     </div>
   );

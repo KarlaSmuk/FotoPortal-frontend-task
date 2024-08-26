@@ -1,6 +1,6 @@
 type InfoContainerContentProps = {
   paragraph: string;
-  lineHeight: string;
+  lineHeight?: string;
 };
 
 export default function InfoContainerContent({
