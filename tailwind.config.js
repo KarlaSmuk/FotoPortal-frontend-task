@@ -15,6 +15,8 @@ export default {
         "button-grey": "#E8E8E8",
         "border-grey": "#B6B6B6",
         "text-grey": "#7C7C7C",
+        "border-divide-grey": "#E8E8E8",
+        "border-checkbox": "#AAAAAA",
       },
       screens: {
         mobile: "320px",

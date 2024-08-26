@@ -11,7 +11,7 @@ export default function TextIconContainer({
   text,
 }: TextIconContainerProps) {
   return (
-    <div className="flex w-fit items-center gap-[5px]">
+    <div className="ml-[40px] flex w-fit items-center gap-[5px]">
       {iconSide === "left" && icon}
       <p className="text-[13px] leading-[17.7px] tracking-[-0.2px]">{text}</p>
       {iconSide === "right" && icon}
