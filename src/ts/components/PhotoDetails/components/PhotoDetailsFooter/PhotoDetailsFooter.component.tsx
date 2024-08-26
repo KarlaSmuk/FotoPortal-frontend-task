@@ -22,7 +22,7 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
         </InfoContainer>
       </div>
       <div className="mt-[21px] max-w-[827px]">
-        <InfoContainer title={"Opis"}>
+        <InfoContainer title={"Opis"} marginBottom="8px">
           <InfoContainerContent
             lineHeight="22px"
             paragraph={photo.description}
