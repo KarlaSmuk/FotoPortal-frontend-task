@@ -7,5 +7,12 @@ export default function InfoContainerContent({
   paragraph,
   lineHeight = "19px",
 }: InfoContainerContentProps) {
-  return <p className={`text-sm leading-[${lineHeight}]`}>{paragraph}</p>;
+  const leadingVariants = {
+    "19px": "leading-[19px]",
+    "22px": "leading-[22px]",
+  };
+  const lineHeightClass =
+    leadingVariants[lineHeight as keyof typeof leadingVariants];
+
+  return <p className={`text-sm ${lineHeightClass}`}>{paragraph}</p>;
 }
