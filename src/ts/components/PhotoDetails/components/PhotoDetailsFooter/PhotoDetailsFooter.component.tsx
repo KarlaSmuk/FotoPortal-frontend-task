@@ -32,8 +32,9 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
       <div className="max-w-[574px] mt-[23px]">
         <InfoContainer title={"Ključne riječi"}>
           <div className="flex flex-wrap gap-[10px] mt-[15px]">
-            {photo.keywords.map((keyword) => {
-              return <KeywordContainer keyword={keyword} />;
+            {photo.keywords.map((keyword, index) => {
+              //or we can set id of each keyword as index
+              return <KeywordContainer key={index} keyword={keyword} />;
             })}
           </div>
         </InfoContainer>
