@@ -6,10 +6,10 @@ export default function PhotoPreviewContainer({
   url,
 }: PhotoPreviewContainerProps) {
   return (
-    <div className="bg-bg-color max-w-[956px] flex justify-center">
+    <div className="flex max-w-[956px] justify-center bg-bg-color">
       <img
         src={url}
-        className="mt-[42px] mb-[65px] h-[527px] w-[300px] sm:w-[448px] object-cover"
+        className="mb-[65px] mt-[42px] h-[527px] w-[300px] object-cover sm:w-[448px]"
       />
     </div>
   );

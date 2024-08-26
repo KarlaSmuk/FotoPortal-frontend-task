@@ -10,7 +10,7 @@ type PhotoDetailsFooterProps = {
 export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
   return (
     <div className="mx-[65px] mb-[68px]">
-      <div className="flex justify-between mt-[41px] max-w-[669px] h-[65px]">
+      <div className="mt-[41px] flex h-[65px] max-w-[669px] justify-between">
         <InfoContainer title={"Galerija"}>
           <InfoContainerContent paragraph={photo.gallery} />
         </InfoContainer>
@@ -21,7 +21,7 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
           <InfoContainerContent paragraph={photo.agency} />
         </InfoContainer>
       </div>
-      <div className="max-w-[827px] mt-[21px]">
+      <div className="mt-[21px] max-w-[827px]">
         <InfoContainer title={"Opis"}>
           <InfoContainerContent
             lineHeight="22px"
@@ -29,9 +29,9 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
           />
         </InfoContainer>
       </div>
-      <div className="max-w-[574px] mt-[23px]">
+      <div className="mt-[23px] max-w-[574px]">
         <InfoContainer title={"Ključne riječi"}>
-          <div className="flex flex-wrap gap-[10px] mt-[15px]">
+          <div className="mt-[15px] flex flex-wrap gap-[10px]">
             {photo.keywords.map((keyword, index) => {
               //or we can set id of each keyword as index
               return <KeywordContainer key={index} keyword={keyword} />;
