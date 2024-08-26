@@ -15,14 +15,14 @@ export function useGetPhotoDetails() {
         type: "Print",
         width: "2667",
         height: "4000",
-        price: 100.0,
+        price: "100.00",
       },
       {
         size: "SMALL",
         type: "Web",
         width: "1072",
         height: "1600",
-        price: 130.0,
+        price: "130.00",
       },
     ],
     keywords: [

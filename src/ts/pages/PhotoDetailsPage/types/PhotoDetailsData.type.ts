@@ -15,5 +15,5 @@ export interface SizesData {
     type: string;
     width: string;
     height: string;
-    price: number;
+    price: string;
 }
