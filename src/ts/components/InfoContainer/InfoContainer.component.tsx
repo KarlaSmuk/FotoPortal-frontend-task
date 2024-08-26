@@ -20,11 +20,11 @@ export default function InfoContainer({
 
   return (
     <div className="text-black-lighter tracking-[-0.4px]">
-      <div
+      <p
         className={`${marginBottomClass} text-xs font-bold uppercase leading-[16px]`}
       >
         {title}
-      </div>
+      </p>
       {children}
     </div>
   );
