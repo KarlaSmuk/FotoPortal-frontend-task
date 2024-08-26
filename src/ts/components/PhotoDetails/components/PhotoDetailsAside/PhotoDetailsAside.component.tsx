@@ -1,5 +1,7 @@
+import DownloadIcon from "../../../../../icons/DownloadIcon";
 import InfoIcon from "../../../../../icons/InfoIcon";
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
+import Button from "../../../Button/Button.componen";
 import CheckBox from "../../../CheckBox/CheckBox.component";
 import OptionsList from "../../../OptionsList/OptionsList.component";
 import TextIconContainer from "../../../TextIconContainer/TextIconContainer.component";
@@ -16,8 +18,17 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
         text={"Kako mogu koristiti ovaj sadržaj?"}
         iconSide={"right"}
       />
-      <OptionsList title={photo.name} options={photo.sizes} />
-      <CheckBox labelText={"Preuzmi s potpisom autora"} />
+      <div className="mx-[35px]">
+        <OptionsList title={photo.name} options={photo.sizes} />
+        <CheckBox labelText={"Preuzmi s potpisom autora"} />
+        <Button color={"grey"} border={false}>
+          <TextIconContainer
+            icon={<DownloadIcon />}
+            iconSide={"left"}
+            text={"PREUZMI SADRŽAJ"}
+          />
+        </Button>
+      </div>
     </div>
   );
 }

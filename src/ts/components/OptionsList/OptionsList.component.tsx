@@ -8,7 +8,7 @@ type OptionsListProps = {
 
 export default function OptionsList({ title, options }: OptionsListProps) {
   return (
-    <div className="divide-border-divide-grey border-border-divide-grey-grey mx-[35px] mt-4 divide-y divide-solid rounded-[10px] border">
+    <div className="divide-border-divide-grey border-border-divide-grey-grey mt-4 divide-y divide-solid rounded-[10px] border">
       <h5 className="pb-[16px] pl-[20px] pt-[15px] font-semibold leading-[21.79px] tracking-[-0.4px]">
         {title}
       </h5>
