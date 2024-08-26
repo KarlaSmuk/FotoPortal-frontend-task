@@ -5,7 +5,7 @@ type InfoContainerContentProps = {
 
 export default function InfoContainerContent({
   paragraph,
-  lineHeight,
+  lineHeight = "19px",
 }: InfoContainerContentProps) {
-  return <span className={`text-sm leading-[${lineHeight}]`}>{paragraph}</span>;
+  return <p className={`text-sm leading-[${lineHeight}]`}>{paragraph}</p>;
 }
