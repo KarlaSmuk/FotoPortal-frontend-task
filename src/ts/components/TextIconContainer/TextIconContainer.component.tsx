@@ -1,19 +1,41 @@
 import { ReactNode } from "react";
 
 type TextIconContainerProps = {
-  icon: ReactNode;
-  iconSide: "left" | "right";
+  icon?: ReactNode;
+  iconSide?: "left" | "right";
   text: string;
+  gap: string;
+  lineHeight: string;
+  fontWeight?: number;
+  textSize?: string;
+  tracking?: string;
+  textColor?: string;
 };
 export default function TextIconContainer({
   icon,
   iconSide,
   text,
+  gap,
+  lineHeight,
+  fontWeight = 400,
+  textSize = "14px",
+  tracking = "-0.4px",
+  textColor = "black-lighter",
 }: TextIconContainerProps) {
   return (
-    <div className="ml-[40px] flex w-fit items-center gap-[5px]">
+    <div className={`flex w-fit items-center`} style={{ gap: gap }}>
       {iconSide === "left" && icon}
-      <p className="text-[13px] leading-[17.7px] tracking-[-0.2px]">{text}</p>
+      <p
+        className={`tracking-[${tracking}]`}
+        style={{
+          lineHeight: lineHeight,
+          fontWeight: fontWeight,
+          color: textColor,
+          fontSize: textSize,
+        }}
+      >
+        {text}
+      </p>
       {iconSide === "right" && icon}
     </div>
   );
