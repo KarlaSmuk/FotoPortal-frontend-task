@@ -7,16 +7,10 @@ type OptionContainerProps = {
 
 export default function OptionContainer({ option }: OptionContainerProps) {
   return (
-    <div className="flex justify-between px-[20px] py-[15px]">
-      <div className="flex gap-[6px]">
-        <input
-          type="radio"
-          className="mt-0.5 h-[14px] w-[14px] appearance-none rounded-full border border-black-lighter text-center"
-        />
-        <label>
-          <OptionText text={option.size} />
-          <p className="mt-[3px] h-[16px] text-xs font-medium leading-[16px] text-text-grey">{`${option.type} (${option.width}x${option.height})`}</p>
-        </label>
+    <div className="flex justify-between px-5 py-[15px]">
+      <div className="flex flex-col gap-[3px]">
+        <OptionText text={option.size} />
+        <p className="h-[16px] text-xs font-medium leading-[16px] text-text-grey">{`${option.type} (${option.width}x${option.height})`}</p>
       </div>
       <OptionText text={`${option.price}KN`} />
     </div>

@@ -1,32 +1,28 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 type InfoContainerProps = {
   title: string;
   children: ReactNode;
-  marginBottom?: string;
-  width?: string;
-  height?: string;
+  className?: string;
+  marginBottom?: "1.5" | "2";
 };
 
 export default function InfoContainer({
   title,
   children,
-  marginBottom = "6px",
-  width,
-  height,
+  marginBottom = "1.5",
+  className,
 }: InfoContainerProps) {
   const marginBottomVariants = {
-    "6px": "mb-[6px]",
-    "8px": "mb-[8px]",
+    "1.5": "mb-1.5",
+    "2": "mb-2",
   };
   const marginBottomClass =
     marginBottomVariants[marginBottom as keyof typeof marginBottomVariants];
 
   return (
-    <div
-      className="tracking-[-0.4px] text-black-lighter"
-      style={{ width, height }}
-    >
+    <div className={twMerge("tracking-[-0.4px] text-black-lighter", className)}>
       <p
         className={`${marginBottomClass} text-xs font-bold uppercase leading-[16px]`}
       >

@@ -1,6 +1,6 @@
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
 import InfoContainer from "../../../InfoContainer/InfoContainer.component";
-import InfoContainerContent from "../../../InfoContainer/InfoContainerContent.component";
+import InfoContainerContent from "../../../InfoContainer/components/InfoContainerContent.component";
 import KeywordContainer from "../../../KeywordContainer/KeywordContainer.component";
 
 type PhotoDetailsFooterProps = {
@@ -10,7 +10,7 @@ type PhotoDetailsFooterProps = {
 export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
   return (
     <div className="mx-[65px] mb-[68px]">
-      <div className="mt-[41px] flex h-[65px] max-w-[669px] justify-between">
+      <div className="mt-[41px] flex h-[65px] max-w-[669px] justify-between gap-4">
         <InfoContainer title={"Galerija"}>
           <InfoContainerContent paragraph={photo.gallery} />
         </InfoContainer>
@@ -22,9 +22,9 @@ export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
         </InfoContainer>
       </div>
       <div className="mt-[21px] max-w-[827px]">
-        <InfoContainer title={"Opis"} marginBottom="8px">
+        <InfoContainer title={"Opis"} marginBottom="2">
           <InfoContainerContent
-            lineHeight="22px"
+            className="leading-[22px]"
             paragraph={photo.description}
           />
         </InfoContainer>

@@ -4,8 +4,9 @@ import ShoppingCartIcon from "../../../../../icons/ShoppingCartIcon";
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
 import Button from "../../../Button/Button.componen";
 import CheckBox from "../../../CheckBox/CheckBox.component";
+import Divider from "../../../Divider/Divider.component";
 import InfoContainer from "../../../InfoContainer/InfoContainer.component";
-import InfoContainerContent from "../../../InfoContainer/InfoContainerContent.component";
+import InfoContainerContent from "../../../InfoContainer/components/InfoContainerContent.component";
 import OptionsList from "../../../OptionsList/OptionsList.component";
 import TextIconContainer from "../../../TextIconContainer/TextIconContainer.component";
 
@@ -29,9 +30,12 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
       </div>
       <div className="mx-[35px]">
         <OptionsList title={photo.name} options={photo.sizes} />
-        <CheckBox labelText={"Preuzmi s potpisom autora"} />
+        <CheckBox
+          className="ml-[5px] mt-[15px]"
+          label="Preuzmi s potpisom autora"
+        />
         <div className="mt-[39.09px] flex flex-col gap-[15px]">
-          <Button color={"grey"} border={false} height={"45px"}>
+          <Button className="h-[45px] bg-border-divide-grey">
             <TextIconContainer
               icon={<DownloadIcon width="13" height="15.73" />}
               iconSide={"left"}
@@ -42,22 +46,12 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
             />
           </Button>
           <div className="flex gap-[10px]">
-            <Button
-              color={"grey"}
-              border={false}
-              width={"165px"}
-              height={"40px"}
-            >
+            <Button className="h-[40px] w-[165px] bg-border-divide-grey">
               <p className="text-sm leading-[19px] tracking-[-0.4px]">
                 Pošalji u sustav
               </p>
             </Button>
-            <Button
-              color={"grey"}
-              border={false}
-              width={"165px"}
-              height={"40px"}
-            >
+            <Button className="h-[40px] w-[165px] bg-border-divide-grey">
               <p className="text-sm leading-[19px] tracking-[-0.4px]">
                 Pošalji u CMS
               </p>
@@ -65,7 +59,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
           </div>
         </div>
         <div className="mt-[30px] flex flex-col gap-[15.1px]">
-          <Button color={"black"} border={false} height={"45px"}>
+          <Button className="h-[45px] bg-black-lighter">
             <TextIconContainer
               icon={<ShoppingCartIcon width="14" height="14" />}
               iconSide={"left"}
@@ -76,7 +70,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
               textColor="white"
             />
           </Button>
-          <Button color={"grey"} border={false} height={"45px"}>
+          <Button className="h-[45px] border border-solid border-black-lighter">
             <TextIconContainer
               icon={<DownloadIcon width="12" height="14" />}
               iconSide={"left"}
@@ -86,20 +80,20 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
             />
           </Button>
         </div>
-        {/* divider */}
-        <div className="mb-[29.55px] mt-[39.35px] border border-solid border-border-divide-grey" />
+        <Divider className="mb-[29.55px] mt-[39.35px]" />
         <div className="mb-[4px] flex flex-col gap-[30px]">
           {photo.notes.map((note, index) => {
             return (
               <InfoContainer
+                key={index}
                 title={"POSEBNE NAPOMENE"}
-                marginBottom="8px"
-                width="339px"
+                marginBottom="2"
+                className="w-[339px]"
               >
                 <InfoContainerContent
                   key={index}
                   paragraph={note}
-                  lineHeight="22px"
+                  className="leading-[22px]"
                 />
               </InfoContainer>
             );
