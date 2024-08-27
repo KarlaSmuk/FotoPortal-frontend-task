@@ -1,4 +1,5 @@
 import { SizesData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
+import Text from "../../../Text/Text.component";
 import OptionText from "../OptionText/OptionText.component";
 
 type OptionContainerProps = {
@@ -10,9 +11,12 @@ export default function OptionContainer({ option }: OptionContainerProps) {
     <div className="flex justify-between px-5 py-[15px]">
       <div className="flex flex-col gap-[3px]">
         <OptionText text={option.size} />
-        <p className="h-[16px] text-xs font-medium leading-[16px] text-text-grey">{`${option.type} (${option.width}x${option.height})`}</p>
+        <Text
+          type="secondary"
+          variant="grey"
+        >{`${option.type} (${option.width}x${option.height})`}</Text>
       </div>
-      <OptionText text={`${option.price}KN`} />
+      <Text>{`${option.price}KN`}</Text>
     </div>
   );
 }

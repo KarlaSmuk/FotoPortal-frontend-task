@@ -1,7 +1,7 @@
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
 import InfoContainer from "../../../InfoContainer/InfoContainer.component";
-import InfoContainerContent from "../../../InfoContainer/components/InfoContainerContent.component";
 import KeywordContainer from "../../../KeywordContainer/KeywordContainer.component";
+import Text from "../../../Text/Text.component";
 
 type PhotoDetailsFooterProps = {
   photo: PhotoDetailsPageData;
@@ -9,36 +9,32 @@ type PhotoDetailsFooterProps = {
 
 export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
   return (
-    <div className="mx-[65px] mb-[68px]">
-      <div className="mt-[41px] flex h-[65px] max-w-[669px] justify-between gap-4">
+    <div className="mb-[68px] ml-[65px]">
+      <div className="mr-[222px] mt-[41px] flex h-[65px] justify-between">
         <InfoContainer title={"Galerija"}>
-          <InfoContainerContent paragraph={photo.gallery} />
+          <Text>{photo.gallery}</Text>
         </InfoContainer>
         <InfoContainer title={"Autor"}>
-          <InfoContainerContent paragraph={photo.author} />
+          <Text>{photo.author}</Text>
         </InfoContainer>
         <InfoContainer title={"Agencija"}>
-          <InfoContainerContent paragraph={photo.agency} />
+          <Text>{photo.agency}</Text>
         </InfoContainer>
       </div>
-      <div className="mt-[21px] max-w-[827px]">
-        <InfoContainer title={"Opis"} marginBottom="2">
-          <InfoContainerContent
-            className="leading-[22px]"
-            paragraph={photo.description}
-          />
-        </InfoContainer>
-      </div>
-      <div className="mt-[23px] max-w-[574px]">
-        <InfoContainer title={"Ključne riječi"}>
-          <div className="mt-[15px] flex flex-wrap gap-[10px]">
-            {photo.keywords.map((keyword, index) => {
-              //or we can set id of each keyword as index
-              return <KeywordContainer key={index} keyword={keyword} />;
-            })}
-          </div>
-        </InfoContainer>
-      </div>
+      <InfoContainer title={"Opis"} className="mr-[64px] mt-[21px] gap-2">
+        <Text className="leading-[22px]">{photo.description}</Text>
+      </InfoContainer>
+      <InfoContainer
+        title={"Ključne riječi"}
+        className="mr-[317px] mt-[23px] gap-[15px]"
+      >
+        <div className="flex flex-wrap gap-[10px]">
+          {photo.keywords.map((keyword, index) => {
+            //or we can set id of each keyword as key
+            return <KeywordContainer key={index} keyword={keyword} />;
+          })}
+        </div>
+      </InfoContainer>
     </div>
   );
 }

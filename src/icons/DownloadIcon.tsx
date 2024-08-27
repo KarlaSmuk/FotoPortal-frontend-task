@@ -8,11 +8,12 @@ export default function DownloadIcon({ width, height }: DownloadIconProps) {
     <svg
       width={width}
       height={height}
+      viewBox={`0 0 ${width} ${height}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M13 9.25255L11.6907 7.94804L7.42857 12.1854V0.000732422H5.57143V12.1854L1.30929 7.93879L0 9.25255L6.5 15.7288L13 9.25255Z"
+        d="M12 8.33832L10.7914 7.17715L6.85714 10.9489V0.103027H5.14286V10.9489L1.20857 7.16891L0 8.33832L6 14.103L12 8.33832Z"
         fill="#212121"
       />
     </svg>

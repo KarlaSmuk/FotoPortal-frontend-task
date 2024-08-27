@@ -1,5 +1,5 @@
 import { twMerge } from "tailwind-merge";
-import InfoContainerContent from "../InfoContainer/components/InfoContainerContent.component";
+import Text from "../Text/Text.component";
 
 type KeywordContainerProps = {
   keyword: string;
@@ -17,7 +17,7 @@ export default function KeywordContainer({
         className,
       )}
     >
-      <InfoContainerContent paragraph={keyword} />
+      <Text>{keyword}</Text>
     </div>
   );
 }

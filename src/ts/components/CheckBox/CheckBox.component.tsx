@@ -1,5 +1,6 @@
 import { InputHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
+import Text from "../Text/Text.component";
 
 type CheckBoxProps = InputHTMLAttributes<HTMLInputElement> & {
   label: string;
@@ -12,18 +13,13 @@ export default function CheckBox({
   ...props
 }: CheckBoxProps) {
   return (
-    <label
-      className={twMerge(
-        "flex w-fit gap-[6px] text-sm leading-[19px] text-black-lighter",
-        className,
-      )}
-    >
+    <label className={twMerge("flex gap-1.5", className)}>
       <input
         type="checkbox"
         className="h-[19.91px] w-[20px] border border-border-checkbox"
         {...props}
       />
-      {label}
+      <Text>{label}</Text>
     </label>
   );
 }

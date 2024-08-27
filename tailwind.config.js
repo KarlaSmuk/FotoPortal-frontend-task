@@ -9,6 +9,7 @@ export default {
       colors: {
         black: {
           lighter: "#212121",
+          default: "#000000",
         },
         white: "#FFFFFF",
         "bg-color": "#F4F5F7",
