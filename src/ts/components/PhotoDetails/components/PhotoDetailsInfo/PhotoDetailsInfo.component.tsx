@@ -3,11 +3,11 @@ import InfoContainer from "../../../InfoContainer/InfoContainer.component";
 import KeywordContainer from "../../../KeywordContainer/KeywordContainer.component";
 import Text from "../../../Text/Text.component";
 
-type PhotoDetailsFooterProps = {
+type PhotoDetailsInfoProps = {
   photo: PhotoDetailsPageData;
 };
 
-export default function PhotoDetailsFooter({ photo }: PhotoDetailsFooterProps) {
+export default function PhotoDetailsInfo({ photo }: PhotoDetailsInfoProps) {
   return (
     <div className="mb-[68px] ml-[65px]">
       <div className="mr-[222px] mt-[41px] flex h-[65px] justify-between">

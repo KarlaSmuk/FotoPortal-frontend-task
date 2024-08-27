@@ -9,11 +9,13 @@ import InfoContainer from "../../../InfoContainer/InfoContainer.component";
 import OptionsList from "../../../OptionsList/OptionsList.component";
 import Text from "../../../Text/Text.component";
 
-type PhotoDetailsAsideProps = {
+type PhotoDetailsSidebarProps = {
   photo: PhotoDetailsPageData;
 };
 
-export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
+export default function PhotoDetailsSidebar({
+  photo,
+}: PhotoDetailsSidebarProps) {
   return (
     <div className="mb-[52px] w-[410px] px-[35px] pt-[42px]">
       <div className="ml-[5px] flex flex-row items-center gap-[5px]">
@@ -56,7 +58,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
         </Button>
       </div>
       <Divider className="mb-[29.55px] mt-[39.35px]" />
-      <div className="mb-[4px] flex flex-col gap-[30px]">
+      <div className="flex flex-col gap-[30px]">
         {photo.notes.map((note, index) => {
           return (
             <InfoContainer

@@ -1,7 +1,7 @@
 import { PhotoDetailsPageData } from "../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
 import PhotoPreviewContainer from "./components/PhotoPreviewContainer/PhotoPreviewContainer.component";
-import PhotoDetailsFooter from "./components/PhotoDetailsFooter/PhotoDetailsFooter.component";
-import PhotoDetailsAside from "./components/PhotoDetailsAside/PhotoDetailsAside.component";
+import PhotoDetailsInfo from "./components/PhotoDetailsInfo/PhotoDetailsInfo.component";
+import PhotoDetailsAside from "./components/PhotoDetailsSidebar/PhotoDetailsSidebar.component";
 
 type PhotoDetailsProps = {
   photo: PhotoDetailsPageData;
@@ -9,10 +9,10 @@ type PhotoDetailsProps = {
 
 export default function PhotoDetails({ photo }: PhotoDetailsProps) {
   return (
-    <div className="max-tablet:flex-col flex w-full">
+    <div className="flex w-full max-tablet:flex-col">
       <div className="flex-1 flex-col">
         <PhotoPreviewContainer url={photo.url} />
-        <PhotoDetailsFooter photo={photo} />
+        <PhotoDetailsInfo photo={photo} />
       </div>
       <PhotoDetailsAside photo={photo} />
     </div>
