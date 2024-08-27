@@ -1,9 +1,16 @@
-export default function ShoppingCartIcon() {
+type ShoppingCartIconProps = {
+  width: string;
+  height: string;
+};
+
+export default function ShoppingCartIcon({
+  width,
+  height,
+}: ShoppingCartIconProps) {
   return (
     <svg
-      width="14"
-      height="14"
-      viewBox="0 0 14 14"
+      width={width}
+      height={height}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

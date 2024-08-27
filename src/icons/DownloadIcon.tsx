@@ -1,9 +1,13 @@
-export default function DownloadIcon() {
+type DownloadIconProps = {
+  width: string;
+  height: string;
+};
+
+export default function DownloadIcon({ width, height }: DownloadIconProps) {
   return (
     <svg
-      width="13"
-      height="16"
-      viewBox="0 0 13 16"
+      width={width}
+      height={height}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

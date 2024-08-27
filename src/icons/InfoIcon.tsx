@@ -1,9 +1,13 @@
-export default function InfoIcon() {
+type InfoIconProps = {
+  width: string;
+  height: string;
+};
+
+export default function InfoIcon({ width, height }: InfoIconProps) {
   return (
     <svg
-      width="15"
-      height="15"
-      viewBox="0 0 15 15"
+      width={width}
+      height={height}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

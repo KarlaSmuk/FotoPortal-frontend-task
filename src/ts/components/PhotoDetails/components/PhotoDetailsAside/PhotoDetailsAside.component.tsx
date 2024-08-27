@@ -18,7 +18,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
     <div className="mb-[52px] w-[410px] pt-[42px]">
       <div className="ml-[40px]">
         <TextIconContainer
-          icon={<InfoIcon />}
+          icon={<InfoIcon width="15" height="15" />}
           text={"Kako mogu koristiti ovaj sadržaj?"}
           iconSide={"right"}
           gap="5px"
@@ -33,7 +33,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
         <div className="mt-[39.09px] flex flex-col gap-[15px]">
           <Button color={"grey"} border={false} height={"45px"}>
             <TextIconContainer
-              icon={<DownloadIcon />}
+              icon={<DownloadIcon width="13" height="15.73" />}
               iconSide={"left"}
               text={"PREUZMI SADRŽAJ"}
               gap="16px"
@@ -67,7 +67,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
         <div className="mt-[30px] flex flex-col gap-[15.1px]">
           <Button color={"black"} border={false} height={"45px"}>
             <TextIconContainer
-              icon={<ShoppingCartIcon />}
+              icon={<ShoppingCartIcon width="14" height="14" />}
               iconSide={"left"}
               text={"DODAJ U KOŠARICU"}
               gap="25px"
@@ -78,7 +78,7 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
           </Button>
           <Button color={"grey"} border={false} height={"45px"}>
             <TextIconContainer
-              icon={<DownloadIcon />}
+              icon={<DownloadIcon width="12" height="14" />}
               iconSide={"left"}
               text={"Preuzmi pregledni primjerak"}
               gap="15px"
