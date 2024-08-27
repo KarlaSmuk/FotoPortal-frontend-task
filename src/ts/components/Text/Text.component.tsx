@@ -30,7 +30,12 @@ export default function Text({
   };
 
   return (
-    <p className={twMerge(`${variants[variant]} ${types[type]}`, className)}>
+    <p
+      className={twMerge(
+        `${variants[variant]} ${types[type]} h-fit w-fit`,
+        className,
+      )}
+    >
       {children}
     </p>
   );

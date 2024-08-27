@@ -52,7 +52,7 @@ export default function PhotoDetailsSidebar({
             Dodaj u košaricu
           </Text>
         </Button>
-        <Button className="border-black-default h-[45px] gap-[15px] border border-solid">
+        <Button className="border-black-default h-[40px] gap-[15px] border border-solid">
           <DownloadIcon width="12" height="14" />
           <Text>Preuzmi pregledni primjerak</Text>
         </Button>
