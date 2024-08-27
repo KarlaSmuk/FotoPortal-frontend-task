@@ -4,12 +4,16 @@ type InfoContainerProps = {
   title: string;
   children: ReactNode;
   marginBottom?: string;
+  width?: string;
+  height?: string;
 };
 
 export default function InfoContainer({
   title,
   children,
   marginBottom = "6px",
+  width,
+  height,
 }: InfoContainerProps) {
   const marginBottomVariants = {
     "6px": "mb-[6px]",
@@ -19,7 +23,10 @@ export default function InfoContainer({
     marginBottomVariants[marginBottom as keyof typeof marginBottomVariants];
 
   return (
-    <div className="text-black-lighter tracking-[-0.4px]">
+    <div
+      className="tracking-[-0.4px] text-black-lighter"
+      style={{ width, height }}
+    >
       <p
         className={`${marginBottomClass} text-xs font-bold uppercase leading-[16px]`}
       >

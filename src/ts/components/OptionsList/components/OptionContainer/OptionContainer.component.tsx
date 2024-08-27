@@ -11,11 +11,11 @@ export default function OptionContainer({ option }: OptionContainerProps) {
       <div className="flex gap-[6px]">
         <input
           type="radio"
-          className="border-black-lighter mt-0.5 h-[14px] w-[14px] appearance-none rounded-full border text-center"
+          className="mt-0.5 h-[14px] w-[14px] appearance-none rounded-full border border-black-lighter text-center"
         />
         <label>
           <OptionText text={option.size} />
-          <p className="mt-[3px] text-xs font-medium leading-[16px] text-text-grey">{`${option.type} (${option.width}x${option.height})`}</p>
+          <p className="mt-[3px] h-[16px] text-xs font-medium leading-[16px] text-text-grey">{`${option.type} (${option.width}x${option.height})`}</p>
         </label>
       </div>
       <OptionText text={`${option.price}KN`} />

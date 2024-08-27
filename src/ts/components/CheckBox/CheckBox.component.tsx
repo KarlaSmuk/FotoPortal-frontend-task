@@ -4,13 +4,13 @@ type CheckBoxProps = {
 
 export default function CheckBox({ labelText }: CheckBoxProps) {
   return (
-    <div className="mt-[16px] flex gap-[6px]">
+    <div className="ml-[5px] mt-[15px] flex w-fit gap-[6px]">
       <input
         type="checkbox"
-        className="border-border-checkbox h-[19.91px] w-[20px] border"
+        className="h-[19.91px] w-[20px] border border-border-checkbox"
       />
       <label>
-        <p className="text-black-lighter text-sm leading-[19px]">{labelText}</p>
+        <p className="text-sm leading-[19px] text-black-lighter">{labelText}</p>
       </label>
     </div>
   );

@@ -4,6 +4,8 @@ import ShoppingCartIcon from "../../../../../icons/ShoppingCartIcon";
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
 import Button from "../../../Button/Button.componen";
 import CheckBox from "../../../CheckBox/CheckBox.component";
+import InfoContainer from "../../../InfoContainer/InfoContainer.component";
+import InfoContainerContent from "../../../InfoContainer/InfoContainerContent.component";
 import OptionsList from "../../../OptionsList/OptionsList.component";
 import TextIconContainer from "../../../TextIconContainer/TextIconContainer.component";
 
@@ -85,7 +87,24 @@ export default function PhotoDetailsAside({ photo }: PhotoDetailsAsideProps) {
           </Button>
         </div>
         {/* divider */}
-        <div className="border-border-divide-grey mb-[29.55px] mt-[39.35px] border border-solid" />
+        <div className="mb-[29.55px] mt-[39.35px] border border-solid border-border-divide-grey" />
+        <div className="mb-[4px] flex flex-col gap-[30px]">
+          {photo.notes.map((note, index) => {
+            return (
+              <InfoContainer
+                title={"POSEBNE NAPOMENE"}
+                marginBottom="8px"
+                width="339px"
+              >
+                <InfoContainerContent
+                  key={index}
+                  paragraph={note}
+                  lineHeight="22px"
+                />
+              </InfoContainer>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
