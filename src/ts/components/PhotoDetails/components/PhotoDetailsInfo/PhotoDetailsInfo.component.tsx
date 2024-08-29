@@ -9,8 +9,8 @@ type PhotoDetailsInfoProps = {
 
 export default function PhotoDetailsInfo({ photo }: PhotoDetailsInfoProps) {
   return (
-    <div className="mb-[68px] ml-[65px]">
-      <div className="mr-[222px] mt-[41px] flex h-[65px] justify-between">
+    <div className="pl-[35px] md:pb-[68px] md:pl-[65px]">
+      <div className="mt-[41px] flex h-[65px] w-[75.1%] justify-between gap-3">
         <InfoContainer title={"Galerija"}>
           <Text>{photo.gallery}</Text>
         </InfoContainer>
@@ -21,12 +21,12 @@ export default function PhotoDetailsInfo({ photo }: PhotoDetailsInfoProps) {
           <Text>{photo.agency}</Text>
         </InfoContainer>
       </div>
-      <InfoContainer title={"Opis"} className="mr-[64px] mt-[21px] gap-2">
+      <InfoContainer title={"Opis"} className="mr-16 mt-[21px] gap-2">
         <Text className="leading-[22px]">{photo.description}</Text>
       </InfoContainer>
       <InfoContainer
         title={"Ključne riječi"}
-        className="mr-[317px] mt-[23px] gap-[15px]"
+        className="mt-[23px] w-[64.4%] gap-[15px]"
       >
         <div className="flex flex-wrap gap-[10px]">
           {photo.keywords.map((keyword, index) => {

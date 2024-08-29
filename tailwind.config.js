@@ -20,17 +20,10 @@ export default {
         "border-checkbox": "#AAAAAA",
       },
       screens: {
-        mobile: "320px",
-        // => @media (min-width: 640px) { ... }
-
-        tablet: "900px",
-        // => @media (min-width: 640px) { ... }
-
-        laptop: "1024px",
-        // => @media (min-width: 1024px) { ... }
-
-        desktop: "1357px",
-        // => @media (min-width: 1357px) { ... }
+        s: "425px",
+        sm: "640px",
+        md: "768px",
+        lg: "900px",
       },
     },
   },

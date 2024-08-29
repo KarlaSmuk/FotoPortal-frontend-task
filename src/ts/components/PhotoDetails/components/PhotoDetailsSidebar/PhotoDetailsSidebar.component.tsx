@@ -17,8 +17,8 @@ export default function PhotoDetailsSidebar({
   photo,
 }: PhotoDetailsSidebarProps) {
   return (
-    <div className="mb-[52px] w-[410px] px-[35px] pt-[42px]">
-      <div className="ml-[5px] flex flex-row items-center gap-[5px]">
+    <div className="s:w-[410px] mb-[52px] px-[35px] pb-1 pt-[42px]">
+      <div className="ml-[5px] flex items-center gap-[5px]">
         <Text type="s" variant="black">
           Kako mogu koristiti ovaj sadržaj?
         </Text>
@@ -52,7 +52,7 @@ export default function PhotoDetailsSidebar({
             Dodaj u košaricu
           </Text>
         </Button>
-        <Button className="border-black-default h-[40px] gap-[15px] border border-solid">
+        <Button className="h-[40px] gap-[15px] border border-solid border-black-default">
           <DownloadIcon width="12" height="14" />
           <Text>Preuzmi pregledni primjerak</Text>
         </Button>
@@ -64,7 +64,7 @@ export default function PhotoDetailsSidebar({
             <InfoContainer
               key={index}
               title={"POSEBNE NAPOMENE"}
-              className="w-[339px] gap-2"
+              className="gap-2 mobile:w-[339px]"
             >
               <Text className="leading-[22px]">{note}</Text>
             </InfoContainer>
