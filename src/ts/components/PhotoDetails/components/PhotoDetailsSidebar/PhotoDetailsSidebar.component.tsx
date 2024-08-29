@@ -2,7 +2,7 @@ import DownloadIcon from "../../../../../icons/DownloadIcon";
 import InfoIcon from "../../../../../icons/InfoIcon";
 import ShoppingCartIcon from "../../../../../icons/ShoppingCartIcon";
 import { PhotoDetailsPageData } from "../../../../pages/PhotoDetailsPage/types/PhotoDetailsData.type";
-import Button from "../../../Button/Button.componen";
+import Button from "../../../Button/Button.component";
 import CheckBox from "../../../CheckBox/CheckBox.component";
 import Divider from "../../../Divider/Divider.component";
 import InfoContainer from "../../../InfoContainer/InfoContainer.component";
