@@ -13,7 +13,7 @@ export default function KeywordContainer({
   return (
     <div
       className={twMerge(
-        "flex h-7 items-center rounded-[50px] border border-border-grey px-[15px] pb-[5px] pt-[4px]",
+        "flex h-7 items-center rounded-[50px] border border-border-grey px-[14px] pb-[5px] pt-[4px]",
         className,
       )}
     >

@@ -9,8 +9,8 @@ type PhotoDetailsProps = {
 
 export default function PhotoDetails({ photo }: PhotoDetailsProps) {
   return (
-    <div className="flex w-full flex-col md:flex-row">
-      <div className="flex-1 flex-col">
+    <div className="flex flex-col md:flex-row">
+      <div className="flex-col">
         <PhotoPreview url={photo.url} />
         <PhotoDetailsInfo photo={photo} />
       </div>
