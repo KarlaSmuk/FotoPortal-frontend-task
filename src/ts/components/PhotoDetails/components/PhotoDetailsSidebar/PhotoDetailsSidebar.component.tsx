@@ -17,7 +17,7 @@ export default function PhotoDetailsSidebar({
   photo,
 }: PhotoDetailsSidebarProps) {
   return (
-    <div className="s:w-[410px] mb-[52px] px-[35px] pb-1 pt-[42px]">
+    <div className="mb-[52px] px-[35px] pb-1 pt-[42px] s:w-[410px]">
       <div className="ml-[5px] flex items-center gap-[5px]">
         <Text type="s" variant="black">
           Kako mogu koristiti ovaj sadržaj?
@@ -64,7 +64,7 @@ export default function PhotoDetailsSidebar({
             <InfoContainer
               key={index}
               title={"POSEBNE NAPOMENE"}
-              className="gap-2 mobile:w-[339px]"
+              className="gap-2 s:w-[339px]"
             >
               <Text className="leading-[22px]">{note}</Text>
             </InfoContainer>
