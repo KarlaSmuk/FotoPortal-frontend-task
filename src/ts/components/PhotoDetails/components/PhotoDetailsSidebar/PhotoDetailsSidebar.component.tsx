@@ -48,7 +48,7 @@ export default function PhotoDetailsSidebar({
       <div className="mt-[30px] flex flex-col gap-[15.1px]">
         <Button className="h-[45px] gap-[25px] bg-black-lighter">
           <ShoppingCartIcon width="14" height="14" />
-          <Text variant="white" className="uppercase leading-4">
+          <Text variant="white" className="font-medium uppercase leading-4">
             Dodaj u košaricu
           </Text>
         </Button>

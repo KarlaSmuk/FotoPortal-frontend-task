@@ -19,7 +19,7 @@ export default function Text({
     header: "text-base font-semibold leading-[22px] tracking-[-0.4px]",
     sm: "text-sm leading-[19px] tracking-[-0.4px]",
     s: "text-[13px] leading-[18px] tracking-[-0.2px]",
-    secondary: "text-xs leading-[14px]",
+    secondary: "text-xs leading-[14px] font-semibold",
   };
 
   const variants = {
