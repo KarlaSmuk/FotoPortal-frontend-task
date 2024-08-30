@@ -15,7 +15,7 @@ export function useGetPhotoDetails() {
         type: "Print",
         width: "2667",
         height: "4000",
-        price: "100.00",
+        price: "170.00",
       },
       {
         size: "SMALL",
